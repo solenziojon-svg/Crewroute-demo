@@ -5,60 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CrewRoute</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body { font-family: system-ui, sans-serif; }
-    .monster { filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2)); }
-  </style>
 </head>
 <body class="bg-zinc-950 text-white">
   <div class="max-w-md mx-auto min-h-screen bg-zinc-900">
 
-    <!-- Header -->
-    <div class="bg-emerald-600 p-4 flex items-center gap-3">
-      <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-2xl">🚚</div>
-      <div>
-        <h1 class="text-2xl font-bold">CrewRoute</h1>
-        <p class="text-emerald-100 text-sm">Stop guessing. Start routing.</p>
-      </div>
-    </div>
+    <div class="p-6">
+      <h1 class="text-4xl font-bold text-center mb-8 text-emerald-400">CrewRoute</h1>
 
-    <div class="p-6 space-y-8">
-
-      <!-- Julian -->
-      <div class="bg-zinc-800 rounded-2xl p-5">
-        <div class="flex gap-4 items-center">
-          <img src="https://files.oaiusercontent.com/file-Vl2v9nL8kQJqXzYcWvB8pR?se=2026-05-10T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3Djulian.png&sig=xxxxxxxxxxxxxxxx" 
-               class="w-20 h-20 rounded-2xl object-cover" alt="Julian">
-          <div>
-            <p class="text-emerald-400 text-sm font-medium">JULIAN'S CREW — TODAY</p>
-            <p class="text-3xl font-semibold text-white">4 crews • 11 jobs</p>
-            <p class="text-zinc-400 text-sm">Everything is routed and ready</p>
-          </div>
+      <div class="space-y-8">
+        <!-- Julian -->
+        <div class="bg-zinc-800 rounded-2xl p-6">
+          <img src="https://github.com/solenziojon-svg/Crewroute-demo/raw/main/julian.png" 
+               class="w-full rounded-xl mb-4" alt="Julian">
+          <p class="text-emerald-400 font-semibold text-center">This is Julian with CrewRoute</p>
         </div>
-      </div>
 
-      <!-- Monster -->
-      <div class="bg-zinc-800 rounded-2xl p-5">
-        <div class="flex gap-4 items-center">
-          <img src="https://files.oaiusercontent.com/file-Vl2v9nL8kQJqXzYcWvB8pR?se=2026-05-10T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3Dmonster.png&sig=xxxxxxxxxxxxxxxx" 
-               class="w-20 h-20 rounded-2xl object-cover monster" alt="Monster">
-          <div>
-            <p class="text-orange-400 text-sm font-medium">WITHOUT CREWROUTE</p>
-            <p class="text-xl font-semibold text-orange-300">"Where the hell is everyone going?!"</p>
-          </div>
+        <!-- Monster -->
+        <div class="bg-zinc-800 rounded-2xl p-6">
+          <img src="https://github.com/solenziojon-svg/Crewroute-demo/raw/main/monster.png" 
+               class="w-full rounded-xl mb-4" alt="Monster">
+          <p class="text-orange-400 font-semibold text-center">This is you without CrewRoute</p>
         </div>
-      </div>
 
-      <div class="pt-6">
-        <button onclick="alert('Demo: AI is building your daily route... (This is where the real app would go)')"
-                class="w-full bg-white text-black font-semibold py-4 rounded-2xl text-lg active:scale-95 transition">
+        <button onclick="alert('Demo: This is where the real CrewRoute app would open.')"
+                class="w-full bg-emerald-500 hover:bg-emerald-600 py-4 rounded-2xl text-xl font-bold">
           Build My Daily Route
         </button>
-        <p class="text-center text-zinc-500 text-sm mt-4">
-          Takes ~45 seconds • $49/month
-        </p>
       </div>
-
     </div>
   </div>
 </body>
